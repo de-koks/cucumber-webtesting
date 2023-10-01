@@ -68,13 +68,6 @@
             <artifactId>selenium-support</artifactId>
             <version>4.13.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>au.com.dius</groupId>
-            <artifactId>pact-jvm-provider-junit</artifactId>
-            <version>4.0.10</version>
-        </dependency>
-
     </dependencies>
 
     <build>

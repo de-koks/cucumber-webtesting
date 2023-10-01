@@ -1,7 +1,6 @@
 package org.company;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.AfterClass;
+import io.cucumber.java.AfterAll;
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;
@@ -14,7 +13,7 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @SelectClasspathResource("org/company")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
 public class RunCucumberTest {
-    @AfterClass
+    @AfterAll
     public static void finalizeResources() {
         StepDefinitions.webDriver.close();
     }
